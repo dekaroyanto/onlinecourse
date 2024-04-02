@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <h1>BMI Calculator - Deka Royanto</h1>
+    <div class="row">
+      <div class="column">
+        <form class="form-control" onsubmit="return validateAndCalculate();">
+          <div class="input-field">
+            <p>Jenis Kelamin:</p>
+            <label
+              ><input type="radio" name="gender" id="maleGender" value="male" />
+              Laki-laki</label
+            >
+            <label
+              ><input
+                type="radio"
+                name="gender"
+                id="femaleGender"
+                value="female"
+              />
+              Perempuan</label
+            >
+          </div>
+          <div class="input-field">
+            <input id="heightInput" class="input" type="number" />
+            <label class="label" for="heightInput">Tinggi Badan (cm)</label>
+          </div>
+          <div class="input-field">
+            <input id="weightInput" class="input" type="number" />
+            <label class="label" for="weightInput">Berat Badan (kg)</label>
+          </div>
+          <button type="submit" class="submit-btn">Hitung BMI</button>
+        </form>
+      </div>
+      <div class="column">
+        <div class="form-control">
+          <p class="title">Hasil</p>
+          <p class="hasil" id="result"></p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
