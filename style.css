@@ -26,6 +26,14 @@ section {
   section {
     width: 100%;
   }
+
+  .donglot {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: block;
+  }
 }
 
 .formdata {
@@ -102,13 +110,16 @@ section {
   cursor: pointer;
 }
 
+.munculcuy {
+  display: block;
+}
+
 .buttonkonsultasi,
 .buttonregistrasi {
   height: 40px;
   background: #f2f2f2;
   border-radius: 11px;
   border: 0;
-  outline: none;
   color: #ffffff;
   background: #000000;
   transition: all 0.3s cubic-bezier(0.15, 0.83, 0.66, 1);
@@ -136,16 +147,30 @@ section {
   margin: 20px;
   color: white;
   text-align: justify;
-  font-size: 15px;
 }
 .featureList {
   color: white;
+}
+
+#judulpenyakit,
+#penyakit1,
+#penyakit2,
+#penyakit3,
+#penyakit4 {
+  text-align: center;
+}
+
+.donglot {
+  display: none;
+  justify-content: center;
+  align-items: center;
 }
 
 .playstore-button {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  text-decoration: none;
   border: 2px solid #000;
   border-radius: 9999px;
   background-color: rgba(0, 0, 0, 1);
@@ -155,6 +180,8 @@ section {
   outline: 0;
   transition: all 0.2s ease;
   text-decoration: none;
+  margin-right: 10px;
+  margin-left: 10px;
 }
 
 .playstore-button:hover {
